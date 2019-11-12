@@ -37,6 +37,11 @@ connection.once('open', () => {
   console.log("MongoDB connection is live");
 })
 
+// import routes
+const products = require('./routes/products')
+
+// register apis
+app.use('/products', products)
 
 // Creating live connection to reactjs app
 // Define any API routes before this runs

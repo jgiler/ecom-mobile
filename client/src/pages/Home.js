@@ -90,33 +90,45 @@ class Home extends React.Component {
                     <a
                       href="https://www.facebook.com/jonathan.giler.9"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <i className="fab fa-facebook-square connect"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.instagram.com/jonathangiler/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-instagram connect"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-twitter-square connect"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://www.pinterest.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-pinterest-square connect"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#" target="_blank">
+                    <a
+                      href="https://aboutme.google.com/u/0/?referer=gplus"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-google-plus-square connect"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#" target="_blank">
-                      <i className="fas fa-rss-square connect"></i>
                     </a>
                   </li>
                 </ul>
@@ -209,8 +221,9 @@ class Home extends React.Component {
             <div className="row text-center">
               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <img
+                  // eslint-disable-next-line
                   className="img-rounded"
-                  alt="team-photo"
+                  alt="team"
                   src="https://avatars3.githubusercontent.com/u/7431751?s=460&v=4"
                   // width="100%"
                   height="200px"
@@ -228,8 +241,9 @@ class Home extends React.Component {
               {/*col-lg-4 */}
               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <img
+                // eslint-disable-next-line
                   className="img-rounded"
-                  alt="team-photo"
+                  alt="team"
                   src={require("../img/JonathanGiler.jpg")}
                   // width="100%"
                   height="200px"
@@ -239,7 +253,7 @@ class Home extends React.Component {
                   <p>Web Developer</p>
                 </div>
                 <p className="social">
-                  <a href="https://github.com/jgiler/" target="_blank">
+                  <a href="https://github.com/jgiler/" target="_blank" rel='noopener noreferrer'>
                     <span className="fab fa-github-square" />
                   </a>
                 </p>
@@ -247,8 +261,9 @@ class Home extends React.Component {
               {/*col-lg-4 */}
               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <img
+                  // eslint-disable-next-line
                   className="img-rounded"
-                  alt="team-photo"
+                  alt="team"
                   src="https://pbs.twimg.com/profile_images/829431121586880513/UGqLggLr_400x400.jpg"
                   // width="100%"
                   height="200px"

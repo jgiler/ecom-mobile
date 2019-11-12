@@ -7,7 +7,7 @@ const productSchema = new Schema({
     about: {type: String, required: true},
     category: {type: String, required: true},
     url: {type: String, required: true},
-    price: {type: Double, required: true}
+    price: {type: Number, required: true}
 }, {
     timestamps: true
 })
