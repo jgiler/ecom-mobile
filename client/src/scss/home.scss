@@ -1,0 +1,72 @@
+// SLIDER
+.carousel-inner,
+.carousel-inner img {
+  height: 70vh;
+}
+
+
+// CONNECT WITH US
+.connect {
+    font-size: 50px;
+}
+
+.connect:hover {
+    transition: all 500ms;
+    font-size: 60px;
+    color: firebrick;
+}
+
+/* MEET OUR TEAM */
+#ourTeam {
+  text-align: center;
+  color: #4c4c4c;
+  word-spacing: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.ion-minus {
+  padding: 0px 10px;
+}
+
+.team {
+  background-color: #f6f6f6;
+  padding: 60px 0px;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+}
+
+.team h4 {
+  margin-top: 20px;
+  color: #5db4c0;
+}
+
+.team .fa {
+  color: #5db4c0;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 3px;
+}
+
+.fa-github-square {
+  font-size: 50px;
+  color: black;
+}
+
+.fa-github-square:hover {
+    font-size: 60px;
+    color: firebrick;
+    transition: all 500ms;
+}
+
+// STYLING FOR CODE THAT IS COMMENTED OUT. NOT WORKING YET
+#who {
+  width: 80%;
+  margin: auto;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
