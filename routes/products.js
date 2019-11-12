@@ -10,4 +10,13 @@ router.get('/', async (req,res) => {
     }
 })
 
+router.post('/add', async (req,res) => {
+    let body = req.body
+    try {const add = await Product.create(body)
+        res.send(add)}
+        catch {
+            console.log('failed post product')
+        }
+})
+
 module.exports = router

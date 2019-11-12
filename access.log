@@ -12,3 +12,17 @@
 [0mGET /product [32m200 [0m3.059 ms - 2926[0m
 [0mGET /products [32m200 [0m48.772 ms - 2[0m
 [0mGET /products [32m200 [0m342.036 ms - 2[0m
+[0mGET /products/ [32m200 [0m64.092 ms - 2[0m
+[0mGET /products/ [32m200 [0m55.978 ms - 2[0m
+[0mGET /products/ [32m200 [0m67.641 ms - 2[0m
+[0mGET /products/ [32m200 [0m51.863 ms - 2[0m
+[0mGET /product [32m200 [0m8.091 ms - 2926[0m
+[0mGET /products [32m200 [0m38.760 ms - 2[0m
+[0mGET /products [32m200 [0m52.325 ms - 2[0m
+[0mGET /products [32m200 [0m51.839 ms - 2[0m
+[0mGET /products [32m200 [0m61.443 ms - 2[0m
+[0mGET /products [32m200 [0m54.960 ms - 2[0m
+[0mPOST /products/add [32m200 [0m76.750 ms - 221[0m
+[0mPOST /products/ [33m404 [0m0.634 ms - 149[0m
+[0mGET /products/ [32m200 [0m60.679 ms - 223[0m
+[0mGET /products/ [32m200 [0m96.470 ms - 223[0m
