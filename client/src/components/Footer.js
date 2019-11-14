@@ -9,7 +9,7 @@ const Footer = () => (
       <div className="row">
         {/* Grid column */}
         <div className="col-md-12 py-5" id="social-icon">
-          <div className=" flex-center">
+          <div className="flex-center">
             {/* Facebook */}
             <a className="fb-ic" href='https://www.facebook.com/jonathan.giler.9' target='_blank' rel='noopener noreferrer'>
               <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
