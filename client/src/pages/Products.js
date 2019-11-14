@@ -18,26 +18,26 @@ class Products extends React.Component {
   }
 
   // fetches API endpoints
-  fetchProducts = ({ type }) => {
-    let ajaxRequest;
-    if (type) {
-      // we want to filter on type
-      ajaxRequest = axios.get("/api/productfilter/" + encodeURIComponent(type)); // encoder escapes certain characters so server wont misintrepet them and send something else. this encodes them first and then sends response
-    } else {
-      ajaxRequest = axios.get("/api/products"); // if no type specifed in url then return all products
-    }
-    ajaxRequest
-      .then(res => {
-        this.setState({ products: res.data.products })
-        console.log(res.data.products);
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  };
+  // fetchProducts = ({ type }) => {
+  //   let ajaxRequest;
+  //   if (type) {
+  //     // we want to filter on type
+  //     ajaxRequest = axios.get("/api/productfilter/" + encodeURIComponent(type)); // encoder escapes certain characters so server wont misintrepet them and send something else. this encodes them first and then sends response
+  //   } else {
+  //     ajaxRequest = axios.get("/api/products"); // if no type specifed in url then return all products
+  //   }
+  //   ajaxRequest
+  //     .then(res => {
+  //       this.setState({ products: res.data.products })
+  //       console.log(res.data.products);
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //     });
+  // };
 
   fetchMongoProducts = () => {
-    axios.get('http://localhost:5000/products').then(res => {
+    axios.get('/products').then(res => {
       console.log('>>>>>>>>>>>>>>>>>>>attempt to fetch mongo data<<<<<<<<<<<<<<<<<<,')
       console.log(res.data)
       this.setState({products: res.data})
