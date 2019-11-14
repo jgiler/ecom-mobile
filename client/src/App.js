@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Contact from './pages/Contact'
+import Admin from './pages/Admin'
 
 class App extends React.Component {
   render() {
@@ -14,7 +15,8 @@ class App extends React.Component {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/products/:type?" component={Products} />
-          <Route path="/contact/" component={Contact} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/admin' component={Admin} />
         </Switch>
         <Footer />
       </Router>
@@ -23,3 +25,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+//{/* <Route path="/contact/" component={Contact} /> */}

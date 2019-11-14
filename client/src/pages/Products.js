@@ -12,8 +12,9 @@ class Products extends React.Component {
 
   componentDidMount() {
     // used to setState to update your component when the date is retrieved
-    const { type } = this.props.match.params; // declares variable that finds parameter set in app.js
-    this.fetchProducts({ type }); // calls the function below fetch products
+    // const { type } = this.props.match.params; // declares variable that finds parameter set in app.js
+    // this.fetchProducts({ type }); // calls the function below fetch products
+    this.fetchMongoProducts()
   }
 
   // fetches API endpoints
@@ -23,16 +24,31 @@ class Products extends React.Component {
       // we want to filter on type
       ajaxRequest = axios.get("/api/productfilter/" + encodeURIComponent(type)); // encoder escapes certain characters so server wont misintrepet them and send something else. this encodes them first and then sends response
     } else {
-      ajaxRequest = axios.get("/api/products/"); // if no type specifed in url then return all products
+      ajaxRequest = axios.get("/api/products"); // if no type specifed in url then return all products
     }
     ajaxRequest
       .then(res => {
-        this.setState({ products: res.data.products });
+        this.setState({ products: res.data.products })
+        console.log(res.data.products);
       })
       .catch(err => {
         console.log(err);
       });
   };
+
+  fetchMongoProducts = () => {
+    axios.get('http://localhost:5000/products').then(res => {
+      console.log('>>>>>>>>>>>>>>>>>>>attempt to fetch mongo data<<<<<<<<<<<<<<<<<<,')
+      console.log(res.data)
+      this.setState({products: res.data})
+    }).catch(err => {
+      console.log(err, 'mongo fetch failed')
+    })
+  }
+
+
+
+  
 
   componentDidUpdate = prevProps => {
     // user
@@ -58,6 +74,8 @@ class Products extends React.Component {
   filterProducts = (products, typeFilter, priceFilter) => {
     // Duplicate Products
     let filteredProducts = products;
+    console.log(filteredProducts)
+
     console.log("before filter", typeFilter, filteredProducts.length);
     // Apply Filters
     // Type/Category
@@ -70,7 +88,7 @@ class Products extends React.Component {
     // Price
     if (priceFilter) {
       filteredProducts = filteredProducts.filter(
-        product => product.price <= parseInt(priceFilter) // JONATHAN PROBLEM
+        product => product.price <= parseInt(priceFilter) // BUG
       );
     }
 

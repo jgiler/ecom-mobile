@@ -10,15 +10,15 @@ class CommentSection extends React.Component {
 
   componentDidMount() {
     axios
-      .get("/api/contacts")
+      .get("http://localhost:5000/contacts")
       .then(res => {
-        this.setState({ contacts: res.data.contacts }, () => 
-        console.log(res.data.contacts)
+        this.setState({ contacts: res.data }, () => 
+        console.log(res.data)
         );
       })
-  
+
       .catch(err => {
-        console.log(err);
+        console.log(err, 'failed to get contacts');
       });
   }
 
