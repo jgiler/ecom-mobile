@@ -10,7 +10,7 @@ class CommentSection extends React.Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5000/contacts")
+      .get("/contacts")
       .then(res => {
         this.setState({ contacts: res.data }, () => 
         console.log(res.data)
