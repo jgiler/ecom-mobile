@@ -43,10 +43,12 @@ connection.once("open", () => {
 // import routes
 const products = require("./routes/products");
 const contacts = require("./routes/contacts");
+const usersRouter = require('./routes/usersRouter')
 
 // register apis
 app.use("/products", products);
 app.use("/contacts", contacts);
+app.use('/users', usersRouter);
 
 // Creating live connection to reactjs app
 // Define any API routes before this runs

@@ -9,6 +9,7 @@ import './scss/contact.scss'
 import './scss/home.scss'
 import App from "./App.js";
 import "bootstrap/dist/css/bootstrap.css";
+import 'milligram'
 import 'font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(<App />, document.getElementById("root"));

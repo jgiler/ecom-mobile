@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Nav = () => (
+const Nav = (props) => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
      <NavLink exact to="/" className="logo">
       <img
@@ -17,6 +17,21 @@ const Nav = () => (
     <NavLink className="navbar-brand" exact to="/contact">
       Contact
     </NavLink>
+    <NavLink to="/">Home</NavLink>
+			{props.currentUser
+				? (
+					<span>
+						<NavLink to="/Admin">Admin</NavLink>
+						<NavLink to="/logout">Log Out</NavLink>
+					</span>
+				)
+				: (
+					<span>
+						<NavLink to="/login">Log In</NavLink>
+						<NavLink to="/signup">Sign Up</NavLink>
+					</span>
+				)
+			}
    
   </nav>
 );

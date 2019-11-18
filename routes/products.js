@@ -4,10 +4,9 @@ let Product = require("../models/product.model");
 router.get("/", async (req, res) => {
   try {
     const products = await Product.find({});
-    console.log("get route product", products);
     res.send(products);
-  } catch {
-    console.log("get products failed");
+  } catch (err){
+    console.log(err, 'products failed');
   }
 });
 
@@ -16,8 +15,8 @@ router.post("/add", async (req, res) => {
   try {
     const add = await Product.create(body);
     res.send(add);
-  } catch {
-    console.log("failed post product");
+  } catch (err){
+    console.log(err, "failed post product");
   }
 });
 

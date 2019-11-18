@@ -8,7 +8,7 @@ class Admin extends React.Component {
     }
 
     fetchProducts () {
-        axios.get('http://localhost:5000/products').then(res => {
+        axios.get('/products').then(res => {
             console.log('=============== admin fetch works')
             console.log(res.data)
             this.setState({products: res.data})
@@ -35,7 +35,6 @@ class Admin extends React.Component {
                   <Product key={index} {...product} />
                 ))}
                 </div>
-                
             </React.Fragment>
         )
     }
