@@ -1,6 +1,6 @@
-# Ecommerce full stack site
+# Ecommerce Refactored
 [General Info]
-* This project is a refactored version of my previous ecommerce app. [Check it out here:]()
+* This project is a refactored version of my previous ecommerce app. [Check it out!](https://github.com/jgiler/ecom-phase-3-4)
 
 ## Technologies used
 Project is created with:
@@ -10,7 +10,7 @@ Project is created with:
 * MongoDB Atlas
 
 ## LAUNCH 
-To run this project, install it locally (by cloning it) using npm. Configure your .env file. :
+To run this project, install it locally (by cloning it) using npm. Configure your .env file. Then follow the commands below: 
 ```
 $ cd ecom-refactor
 $ npm install
