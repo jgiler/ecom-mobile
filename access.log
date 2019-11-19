@@ -291,3 +291,16 @@
 [0mGET /products [36m304 [0m21.364 ms - -[0m
 [0mGET /products [36m304 [0m760.035 ms - -[0m
 [0mGET /products [36m304 [0m20.083 ms - -[0m
+[0mGET /products [36m304 [0m36.408 ms - -[0m
+[0mGET /products [36m304 [0m20.852 ms - -[0m
+[0mGET /products [36m304 [0m20.552 ms - -[0m
+[0mGET /products [36m304 [0m32.808 ms - -[0m
+[0mGET /products [32m200 [0m29.626 ms - 447[0m
+[0mGET /products [32m200 [0m30.998 ms - 745[0m
+[0mGET /products [32m200 [0m19.069 ms - 1279[0m
+[0mGET /products [32m200 [0m37.681 ms - 2059[0m
+[0mGET /products [36m304 [0m31.268 ms - -[0m
+[0mPOST /users [32m200 [0m81.088 ms - 286[0m
+[0mGET /products [36m304 [0m31.722 ms - -[0m
+[0mPOST /users/authenticate [32m200 [0m82.316 ms - 272[0m
+[0mGET /products [36m304 [0m31.162 ms - -[0m

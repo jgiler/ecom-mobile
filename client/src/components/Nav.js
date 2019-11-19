@@ -1,16 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Nav = (props) => (
+const Nav = props => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-     <NavLink exact to="/" className="logo">
-      <img
-        src="https://bit.ly/2TBdjIN"
-        alt="chill logo"
-        className="nav-logo"
-      />
+    <NavLink exact to="/" className="logo">
+      <img src="https://bit.ly/2TBdjIN" alt="chill logo" className="nav-logo" />
     </NavLink>
-  
+
     <NavLink className="navbar-brand" exact to="/products">
       Products
     </NavLink>
@@ -18,21 +14,25 @@ const Nav = (props) => (
       Contact
     </NavLink>
     <NavLink to="/">Home</NavLink>
-			{props.currentUser
-				? (
-					<span>
-						<NavLink to="/Admin">Admin</NavLink>
-						<NavLink to="/logout">Log Out</NavLink>
-					</span>
-				)
-				: (
-					<span>
-						<NavLink to="/login">Log In</NavLink>
-						<NavLink to="/signup">Sign Up</NavLink>
-					</span>
-				)
-			}
-   
+    {props.currentUser ? (
+      <div>
+        <span>
+          <NavLink to="/Admin">Admin</NavLink>
+        </span>
+        <span>
+          <NavLink to="/logout">Log Out</NavLink>
+        </span>
+      </div>
+    ) : (
+      <div>
+        <span>
+          <NavLink to="/login">Log In</NavLink>
+        </span>
+        <span>
+          <NavLink to="/signup">Sign Up</NavLink>
+        </span>
+      </div>
+    )}
   </nav>
 );
 

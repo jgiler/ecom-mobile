@@ -31,7 +31,6 @@ class App extends React.Component {
           <Route path="/" exact component={Home} />
           <Route path="/products/:type?" component={Products} />
           <Route path="/contact" component={Contact} />
-          <Route path="/admin" component={Admin} />
           <Route path="/login" render={(props) => {
 						return <LogIn {...props} onLoginSuccess={this.onLoginSuccess.bind(this)} />
 					}} />
