@@ -1,13 +1,12 @@
 {
-  "name": "server",
+  "name": "ecommerce-refactored",
   "version": "1.0.0",
-  "description": "",
+  "description": "This version of the project still contains filters and easy navigation. The website was made using the Mongo Database on Atlas, Node JS, and React JS. The purpose of this project was to create a secured Administrator page using sha256. The app includes Login and Signup, demonstrating access to protected admin page and protected route. At the moment, anyone can sign up to be an admin, they can view the products. The point is to make sure not anyone can log in and they must sign up first to view admin page as well as not being able to view others passwords in the database(passwords get encryption with bcrypt). Auth process must use bcrypt encryption protocol and JWT.",
   "main": "server.js",
   "dependencies": {
     "app": "^0.1.0",
     "axios": "^0.19.0",
     "bcrypt": "^3.0.6",
-    "bcryptjs": "^2.4.3",
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
@@ -42,7 +41,7 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["Mongo", "MongoDB Atlas", "React", "Bcrypt", "SHA256", "JWT", "Encryption", "Heroku", "CSS", "JavaScript"],
+  "author": "Jonathan Giler",
+  "license": "MIT"
 }
