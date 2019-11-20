@@ -315,3 +315,6 @@
 [0mGET /products [36m304 [0m23.065 ms - -[0m
 [0mGET /products [36m304 [0m32.615 ms - -[0m
 [0mGET /products [32m200 [0m32.427 ms - 2999[0m
+[0mGET /products [36m304 [0m38.828 ms - -[0m
+[0mGET /docs/4.3/assets/brand/bootstrap-solid.svg [33m404 [0m4.689 ms - 252[0m
+[0mGET /contacts [36m304 [0m24.604 ms - -[0m

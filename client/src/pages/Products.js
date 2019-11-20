@@ -12,30 +12,11 @@ class Products extends React.Component {
 
   componentDidMount() {
     // used to setState to update your component when the date is retrieved
-    // const { type } = this.props.match.params; // declares variable that finds parameter set in app.js
-    // this.fetchProducts({ type }); // calls the function below fetch products
+    // calls the function below fetch products
     this.fetchMongoProducts()
   }
 
-  // fetches API endpoints
-  // fetchProducts = ({ type }) => {
-  //   let ajaxRequest;
-  //   if (type) {
-  //     // we want to filter on type
-  //     ajaxRequest = axios.get("/api/productfilter/" + encodeURIComponent(type)); // encoder escapes certain characters so server wont misintrepet them and send something else. this encodes them first and then sends response
-  //   } else {
-  //     ajaxRequest = axios.get("/api/products"); // if no type specifed in url then return all products
-  //   }
-  //   ajaxRequest
-  //     .then(res => {
-  //       this.setState({ products: res.data.products })
-  //       console.log(res.data.products);
-  //     })
-  //     .catch(err => {
-  //       console.log(err);
-  //     });
-  // };
-
+  // Fetching products from Mongo Database
   fetchMongoProducts = () => {
     axios.get('/products').then(res => {
       console.log('>>>>>>>>>>>>>>>>>>>attempt to fetch mongo data<<<<<<<<<<<<<<<<<<,')
@@ -46,16 +27,11 @@ class Products extends React.Component {
     })
   }
 
-
-
-  
-
-  componentDidUpdate = prevProps => {
-    // user
-    if (this.props.match.params.type !== prevProps.match.params.type) {
-      this.fetchMongoProducts({ type: this.props.match.params.type });
-    }
-  };
+  // componentDidUpdate = prevProps => {
+  //   if (this.props.match.params.type !== prevProps.match.params.type) {
+  //     this.fetchMongoProducts({ type: this.props.match.params.type });
+  //   }
+  // };
 
   handleChange = e => {
     let target = e.target.name;
