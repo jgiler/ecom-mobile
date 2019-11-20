@@ -23,19 +23,19 @@ class Contact extends React.Component {
   handleSubmit(event) {
     alert("Success " + this.state.f_name);
     // get all contacts
-    axios.get('/api/contacts').then(res => {
-        console.log(res.data.contacts)
+    axios.get('/contacts').then(res => {
+        console.log(res.data)
         let doesContactExist = false
-        for (let i = 0; i < res.data.contacts.length; i++) {
-            console.log(res.data.contacts[i])
+        for (let i = 0; i < res.data.length; i++) {
+            console.log(res.data[i])
             console.log(this.state.email)
-            if ( res.data.contacts[i].email === this.state.email) {
+            if ( res.data[i].email === this.state.email) {
                 doesContactExist = true;
             }
         }
         console.log('doesContactExist - ', doesContactExist);
         if (doesContactExist === false){
-            axios.post('/api/newcontact', {
+            axios.post('/contacts/add', {
                 f_name: this.state.f_name,
                 l_name: this.state.l_name,
                 address: this.state.address,

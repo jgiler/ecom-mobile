@@ -13,7 +13,8 @@ class CommentSection extends React.Component {
       .get("/contacts")
       .then(res => {
         this.setState({ contacts: res.data }, () => 
-        console.log(res.data)
+        console.log(res.data),
+        console.log('sort newest at top')
         );
       })
 

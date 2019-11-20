@@ -3,8 +3,8 @@ let Contact = require("../models/contact.model");
 
 router.get("/", async (req, res) => {
   try {
-    const contacts = await Contact.find({});
-    console.log("get route product", contacts);
+    const contacts = await Contact.find({}).sort({created_at: -1});
+    console.log("get all contacts");
     res.send(contacts);
   } catch {
     console.log("get contacts failed");
