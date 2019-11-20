@@ -13,7 +13,6 @@ const Nav = props => (
     <NavLink className="navbar-brand" exact to="/contact">
       Contact
     </NavLink>
-    <NavLink to="/">Home</NavLink>
     {props.currentUser ? (
       <div>
         <span>

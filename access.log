@@ -307,3 +307,11 @@
 [0mGET /docs/4.3/assets/brand/bootstrap-solid.svg [33m404 [0m5.472 ms - 252[0m
 [0mGET /contacts [36m304 [0m44.223 ms - -[0m
 [0mGET /products [36m304 [0m33.611 ms - -[0m
+[0mGET /products [32m200 [0m48.023 ms - 2999[0m
+[0mGET /products [36m304 [0m35.559 ms - -[0m
+[0mGET /products [32m200 [0m301.397 ms - 2999[0m
+[0mGET /products [36m304 [0m34.341 ms - -[0m
+[0mGET /products [32m200 [0m31.989 ms - 2999[0m
+[0mGET /products [36m304 [0m23.065 ms - -[0m
+[0mGET /products [36m304 [0m32.615 ms - -[0m
+[0mGET /products [32m200 [0m32.427 ms - 2999[0m

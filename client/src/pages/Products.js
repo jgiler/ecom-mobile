@@ -53,7 +53,7 @@ class Products extends React.Component {
   componentDidUpdate = prevProps => {
     // user
     if (this.props.match.params.type !== prevProps.match.params.type) {
-      this.fetchProducts({ type: this.props.match.params.type });
+      this.fetchMongoProducts({ type: this.props.match.params.type });
     }
   };
 
@@ -65,7 +65,7 @@ class Products extends React.Component {
       },
       () => {
         if (target === "typeFilter") {
-          this.fetchProducts({ type: this.state.typeFilter });
+          this.fetchMongoProducts({ type: this.state.typeFilter });
         }
       }
     );
