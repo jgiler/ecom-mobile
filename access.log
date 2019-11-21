@@ -367,3 +367,5 @@
 [0mPOST /contacts/add [32m200 [0m45.766 ms - 290[0m
 [0mGET /docs/4.3/assets/brand/bootstrap-solid.svg [33m404 [0m2.442 ms - 252[0m
 [0mGET /contacts [32m200 [0m29.197 ms - 3479[0m
+[0mGET /docs/4.3/assets/brand/bootstrap-solid.svg [33m404 [0m11.540 ms - 252[0m
+[0mGET /contacts [32m200 [0m62.650 ms - 3479[0m

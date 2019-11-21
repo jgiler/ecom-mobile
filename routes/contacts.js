@@ -3,7 +3,7 @@ let Contact = require("../models/contact.model");
 
 router.get("/", async (req, res) => {
   try {
-    const contacts = await Contact.find({}).sort({created_at: -1});
+    const contacts = await Contact.find({}).sort({_id: -1});
     console.log("get all contacts");
     res.send(contacts);
   } catch {
