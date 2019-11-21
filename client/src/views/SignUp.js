@@ -33,13 +33,13 @@ class SignUp extends React.Component {
 		const { name, email, password } = this.state.fields
 		return (
 			<div className='SignUp'>
-				<div className='row'>
+				<div className='row signup'>
 					<div className='column column-33 column-offset-33'>
 						<h1>Sign Up</h1>
 						<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
-							<input type="text" placeholder="Name" name="name" value={name} />
-							<input type="text" placeholder="Email" name="email" value={email} />
-							<input type="password" placeholder="Password" name="password" value={password} />
+							<input onChange={this.onInputChange.bind(this)} type="text" placeholder="Name" name="name" value={name} />
+							<input onChange={this.onInputChange.bind(this)} type="text" placeholder="Email" name="email" value={email} />
+							<input onChange={this.onInputChange.bind(this)}type="password" placeholder="Password" name="password" value={password} />
 							<button>Sign Up</button>
 						</form>
 					</div>

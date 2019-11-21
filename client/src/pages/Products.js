@@ -93,17 +93,17 @@ class Products extends React.Component {
               onChange={this.handleChange}
               as="select"
               defaultValue={typeFilter}
-            >
-              <option selected={typeFilter === ""} value="">
+            > 
+              <option defaultValue={typeFilter === ""} value='' >
                 All
               </option>
-              <option selected={typeFilter === "item"} value="item">
+              <option defaultValue={typeFilter === "item"} value="item">
                 Item
               </option>
-              <option selected={typeFilter === "bedroom"} value="bedroom">
+              <option defaultValue={typeFilter === "bedroom"} value="bedroom">
                 Bedroom
               </option>
-              <option selected={typeFilter === "clothes"} value="clothes">
+              <option defaultValue={typeFilter === "clothes"} value="clothes">
                 Clothes
               </option>
             </Form.Control>
