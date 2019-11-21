@@ -57,7 +57,7 @@ const Footer = () => (
     </div>
     <NavLink exact to="/" className="logo">
       <img
-        src="https://bit.ly/2TBdjIN"
+        src="https://i.gifer.com/X5NN.gif"
         alt="chill logo"
         className="footerlogo"
       />
