@@ -3,8 +3,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const fs = require("fs");
-const cors = require("cors");
-
 const path = require("path");
 
 const app = express();
@@ -19,7 +17,7 @@ const accessLogStream = fs.createWriteStream(
   { flags: "a" }
 );
 app.use(morgan("dev", { stream: accessLogStream }));
-app.use(cors());
+
 
 // Serve up static assets (heroku)
 if (process.env.NODE_ENV === "production") {
