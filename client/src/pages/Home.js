@@ -60,19 +60,27 @@ class Home extends React.Component {
           <a
             className="carousel-control-prev"
             href="#carouselExampleIndicators"
-            role="button"
+            role="slider"
+            aria-valuenow="2"
+            aria-valuemin="1"
+            aria-valuemax="3"
             data-slide="prev"
+            aria-label='previous slide'
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true" />
+            <span className="carousel-control-prev-icon" aria-label='previous slide'/>
             <span className="sr-only"></span>
           </a>
           <a
             className="carousel-control-next"
             href="#carouselExampleIndicators"
-            role="button"
+            role="slider"
+            aria-valuenow="2"
+            aria-valuemin="1"
+            aria-valuemax="3"
             data-slide="next"
+            aria-label='next slide'
           >
-            <span className="carousel-control-next-icon" aria-hidden="true" />
+            <span className="carousel-control-next-icon" aria-label='next slide' />
             <span className="sr-only"></span>
           </a>
         </div>
@@ -91,6 +99,7 @@ class Home extends React.Component {
                       href="https://www.facebook.com/jonathan.giler.9"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label='facebook'
                     >
                       <i className="fab fa-facebook-square connect"></i>
                     </a>
@@ -100,6 +109,7 @@ class Home extends React.Component {
                       href="https://www.instagram.com/jonathangiler/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label='instagram'
                     >
                       <i className="fab fa-instagram connect"></i>
                     </a>
@@ -109,6 +119,7 @@ class Home extends React.Component {
                       href="https://twitter.com/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label='twitter'
                     >
                       <i className="fab fa-twitter-square connect"></i>
                     </a>
@@ -118,6 +129,7 @@ class Home extends React.Component {
                       href="https://www.pinterest.com/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label='pinterest'
                     >
                       <i className="fab fa-pinterest-square connect"></i>
                     </a>
@@ -127,6 +139,7 @@ class Home extends React.Component {
                       href="https://aboutme.google.com/u/0/?referer=gplus"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label='google-plus'
                     >
                       <i className="fab fa-google-plus-square connect"></i>
                     </a>
@@ -241,7 +254,7 @@ class Home extends React.Component {
               {/*col-lg-4 */}
               <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <img
-                // eslint-disable-next-line
+                  // eslint-disable-next-line
                   className="img-rounded"
                   alt="team"
                   src={require("../img/JonathanGiler.jpg")}
@@ -253,7 +266,12 @@ class Home extends React.Component {
                   <p>Web Developer</p>
                 </div>
                 <p className="social">
-                  <a href="https://github.com/jgiler/" target="_blank" rel='noopener noreferrer'>
+                  <a
+                    href="https://github.com/jgiler/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label='github'
+                  >
                     <span className="fab fa-github-square" />
                   </a>
                 </p>
@@ -290,7 +308,7 @@ class Home extends React.Component {
           <p>Thank you for visiting our store!</p>
           <p className="lead">
             <NavLink
-              className="btn btn-primary btn-lg"
+              className="btn btn-primary btn-lg chillproducts"
               exact
               to="/products"
               role="button"

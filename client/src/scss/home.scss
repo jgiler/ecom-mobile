@@ -40,7 +40,7 @@
 
 .team h4 {
   margin-top: 20px;
-  color: #5db4c0;
+  color: #2b6269;
 }
 
 .team .fa {
@@ -62,11 +62,25 @@
 }
 
 // STYLING FOR CODE THAT IS COMMENTED OUT. NOT WORKING YET
-#who {
-  width: 80%;
-  margin: auto;
+// #who {
+//   width: 80%;
+//   margin: auto;
+// }
+// .flex-container {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// CHILL PRODUCTS
+
+.chillproducts {
+  background-color: black !important;
+  border: none !important;
+  border-radius: 10px !important;
 }
-.flex-container {
-  display: flex;
-  justify-content: center;
+
+.chillproducts:hover {
+  transition: all 1s;
+  background-color: firebrick !important;
+  font-size: 50px;
 }

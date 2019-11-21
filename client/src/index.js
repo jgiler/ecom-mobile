@@ -13,5 +13,6 @@ import 'milligram'
 import 'font-awesome/css/font-awesome.min.css';
 import './scss/login.scss'
 import './scss/signup.scss'
+import './scss/admin.scss'
 
 ReactDOM.render(<App />, document.getElementById("root"));

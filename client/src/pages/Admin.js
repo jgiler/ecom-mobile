@@ -29,7 +29,7 @@ class Admin extends React.Component {
 
         return (
             <React.Fragment>
-                <h1>Admin</h1>
+                <h1 className='admin'>Welcome to the Secret Admin Page</h1>
                 <div className='product-grid'>
                 {showProducts.map((product, index) => (
                   <Product key={index} {...product} />

@@ -46,11 +46,11 @@ class App extends React.Component {
 
 					<Route path="/Admin" render={() => {
 						return currentUser
-							? <Admin />
+							? <Admin /> 
 							: <Redirect to="/login" />
 					}} />
 
-					<Route path="/" component={Home} />
+					{/* <Route path="/" component={Home} /> */}
         </Switch>
         <Footer />
       </Router>
