@@ -552,3 +552,16 @@
 [0mGET /products [32m200 [0m30.644 ms - 2999[0m
 [0mGET /docs/4.3/assets/brand/bootstrap-solid.svg [33m404 [0m0.378 ms - 252[0m
 [0mGET /contacts [36m304 [0m31.336 ms - -[0m
+[0mGET /products [32m200 [0m48.228 ms - 2999[0m
+[0mGET /products [32m200 [0m32.267 ms - 2999[0m
+[0mGET /products [32m200 [0m32.184 ms - 2999[0m
+[0mGET /products [32m200 [0m30.275 ms - 2999[0m
+[0mGET /products [32m200 [0m37.930 ms - 2999[0m
+[0mGET /products [32m200 [0m21.873 ms - 2999[0m
+[0mGET /products [32m200 [0m24.611 ms - 2999[0m
+[0mGET /products [32m200 [0m41.404 ms - 2999[0m
+[0mGET /products [32m200 [0m20.600 ms - 2999[0m
+[0mGET /products [32m200 [0m23.691 ms - 2999[0m
+[0mGET /products [32m200 [0m90.869 ms - 2999[0m
+[0mGET /products [32m200 [0m21.341 ms - 2999[0m
+[0mGET /products [32m200 [0m20.540 ms - 2999[0m
