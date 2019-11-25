@@ -5,7 +5,7 @@ const Product = ({ product, price, about, url, category }) => {
   return (
     <div className="product-card">
       <div className="product-card--img">
-        <img src={url} />
+        <img src={url} alt={product}/>
       </div>
       <div className="product-card--content">
         <strong>{product}</strong>

@@ -84,6 +84,7 @@ class Products extends React.Component {
 
     return (
       <div className="wrapper">
+        <main>
         {/* Filters */}
         <Form>
           <Form.Group className="filter">
@@ -93,8 +94,10 @@ class Products extends React.Component {
               onChange={this.handleChange}
               as="select"
               defaultValue={typeFilter}
+              form='type-form'
+              label='dropdown'
             > 
-              <option defaultValue={typeFilter === ""} value='' >
+              <option defaultValue={typeFilter === ""} value=''>
                 All
               </option>
               <option defaultValue={typeFilter === "item"} value="item">
@@ -126,6 +129,7 @@ class Products extends React.Component {
             <p>No Products Meet that Criteria</p>
           )}
         </div>
+        </main>
       </div>
     );
   }
