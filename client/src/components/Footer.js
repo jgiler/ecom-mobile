@@ -57,7 +57,7 @@ const Footer = () => (
     </div>
     <NavLink exact to="/" className="logo">
       <img
-        src="https://i.gifer.com/X5NN.gif"
+        src="https://truevapeusa.com/wp-content/uploads/2019/03/Chill-Logo.png"
         alt="chill logo"
         className="footerlogo"
       />

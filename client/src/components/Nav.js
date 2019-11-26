@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Nav = props => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <NavLink exact to="/" className="logo">
-      <img src="https://i.gifer.com/X5NN.gif" alt="chill logo" className="nav-logo" />
+      <img src="https://truevapeusa.com/wp-content/uploads/2019/03/Chill-Logo.png" alt="chill logo" className="nav-logo" />
     </NavLink>
 
     <NavLink className="navbar-brand" exact to="/products">

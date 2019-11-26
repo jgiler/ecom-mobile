@@ -10,8 +10,9 @@
 }
 
 .nav-logo {
-  margin-right: 16px;
-  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10px;
 }
 
 span {
