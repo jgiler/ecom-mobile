@@ -27,7 +27,7 @@ Project is created with:
 ## LAUNCH 
 To run this project, install it locally (by cloning it) using npm. Configure your .env file. Then follow the commands below: 
 ```
-$ cd ecom-refactor
+$ cd ecom-mobile
 $ npm install
 $ npm start
 ```
