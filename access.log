@@ -871,3 +871,11 @@
 [0mGET /products [32m200 [0m25.605 ms - 2999[0m
 [0mGET /products [32m200 [0m25.659 ms - 2999[0m
 [0mGET /products [32m200 [0m37.288 ms - 2999[0m
+[0mGET /products [32m200 [0m35.122 ms - 2999[0m
+[0mGET /products [36m304 [0m23.181 ms - -[0m
+[0mGET /products [32m200 [0m23.353 ms - 2999[0m
+[0mGET /products [32m200 [0m25.068 ms - 2999[0m
+[0mGET /products [32m200 [0m22.410 ms - 2999[0m
+[0mGET /products [36m304 [0m49.363 ms - -[0m
+[0mGET /products [32m200 [0m32.477 ms - 2999[0m
+[0mGET /products [32m200 [0m25.416 ms - 2999[0m

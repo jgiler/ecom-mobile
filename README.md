@@ -1,9 +1,9 @@
-# Ecommerce Refactored
+# Ecommerce Mobile
 [Preface]
-* This project is a refactored version of my previous ecommerce app. [Click here to check it out!](https://github.com/jgiler/ecom-phase-3-4)
+* This project allows my refactored version to become a PWA (Progressive Web App) . [Click here to check it out!](https://github.com/jgiler/ecom-refactor)
 
 [General Info]
-* This version of the project still contains filters and easy navigation. The website was made using the Mongo Database on Atlas, Node JS, and React JS. The purpose of this project was to create a secured Administrator page using SHA256.  The app includes Login and Signup, demonstrating access to protected admin page and protected route. At the moment, anyone can sign up to be an admin, they can view the products. The point is to make sure not anyone can log in and they must sign up first to view admin page as well as not being able to view others passwords in the database(passwords get encryption with bcrypt). Auth process must use bcrypt encryption protocol and JWT.
+* This version of the project still contains filters and easy navigation. The website was made using the Mongo Database on Atlas, Node JS, and React JS. The purpose of this project was to create a Progressive Web App for mobile phones to use. The manifest and service worker were the ingredients that made allowed this app to become a PWA.
 
 ## Technologies used
 Project is created with:
@@ -14,6 +14,15 @@ Project is created with:
 * Bcrypt Encryption Protocol
 * JWT
 * Heroku
+* Service Worker
+* Manifest
+
+## PWA on my home screen
+![PWA on my Home Screen](images/PWAhome.png)
+
+## PWA used on my iphone
+![PWA in use](/images/PWAused.png)
+
 
 ## LAUNCH 
 To run this project, install it locally (by cloning it) using npm. Configure your .env file. Then follow the commands below: 
