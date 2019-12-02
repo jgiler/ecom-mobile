@@ -15,7 +15,10 @@ import './scss/login.scss'
 import './scss/signup.scss'
 import './scss/admin.scss'
 import HttpsRedirect from 'react-https-redirect';
+import  * as serviceWorker from './service-worker'
 
 
 
 ReactDOM.render(<HttpsRedirect><App /></HttpsRedirect>, document.getElementById("root"));
+
+serviceWorker.register()
