@@ -90,12 +90,12 @@ class Products extends React.Component {
           <Form.Group className="filter">
             <Form.Label>Filter by Type</Form.Label>
             <Form.Control
+              as="select"
               name="typeFilter"
               onChange={this.handleChange}
-              as="select"
               defaultValue={typeFilter}
               form='type-form'
-              label='dropdown'
+              aria-label='product-filter'
             > 
               <option defaultValue={typeFilter === ""} value=''>
                 All
@@ -115,6 +115,7 @@ class Products extends React.Component {
             <Form.Label>Enter Your Maximum Price</Form.Label>
             <Form.Control
               name="priceFilter"
+              aria-label='price-filter'
               type="number"
               onChange={this.handleChange}
             />

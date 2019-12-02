@@ -14,5 +14,8 @@ import 'font-awesome/css/font-awesome.min.css';
 import './scss/login.scss'
 import './scss/signup.scss'
 import './scss/admin.scss'
+import HttpsRedirect from 'react-https-redirect';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+
+ReactDOM.render(<HttpsRedirect><App /></HttpsRedirect>, document.getElementById("root"));

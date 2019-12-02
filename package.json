@@ -22,6 +22,7 @@
     "mysql": "^2.17.1",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.4",
+    "react-https-redirect": "^1.1.0",
     "request": "^2.88.0",
     "sass": "^1.22.12"
   },
