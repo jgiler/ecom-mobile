@@ -10,6 +10,13 @@ const port = process.env.PORT || 5000;
 let uri = process.env.ATLAS_URI;
 
 // register middleware
+app.use((req, res, next) => {
+	// The 'x-forwarded-proto' check is for Heroku
+	if (!req.secure && req.get('x-forwarded-proto') !== 'https' && process.env.NODE_ENV === "production") {
+		return res.redirect('https://' + req.get('host') + req.url);
+	}
+	next();
+})
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 const accessLogStream = fs.createWriteStream(
@@ -54,15 +61,7 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-// DIDNT WORK
-// // set up a route to redirect http to https
-// app.get('*', function(req, res) {  
-//   console.log('redirect')
-//   res.redirect('https://' + req.headers.host + req.url);
 
-//   // Or, if you don't want to automatically detect the domain name from the request header, you can hard code it:
-//   // res.redirect('https://example.com' + req.url);
-// })
 
 app.listen(port, () => {
   console.log(`Ecom-Refactor is running on port: ${port}`);
