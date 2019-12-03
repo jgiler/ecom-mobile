@@ -879,3 +879,6 @@
 [0mGET /products [36m304 [0m49.363 ms - -[0m
 [0mGET /products [32m200 [0m32.477 ms - 2999[0m
 [0mGET /products [32m200 [0m25.416 ms - 2999[0m
+[0mGET /products [32m200 [0m39.135 ms - 2999[0m
+[0mGET /products [32m200 [0m25.088 ms - 2999[0m
+[0mGET /products [32m200 [0m24.230 ms - 2999[0m
