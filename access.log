@@ -889,3 +889,13 @@
 [0mGET /products [32m200 [0m24.163 ms - 2999[0m
 [0mGET /products [32m200 [0m24.580 ms - 2999[0m
 [0mGET /products [32m200 [0m25.045 ms - 2999[0m
+[0mGET /Home.js [32m200 [0m12.876 ms - 3384[0m
+[0mGET /App.js [32m200 [0m13.370 ms - 3384[0m
+[0mGET /src/index.js [32m200 [0m14.860 ms - 3384[0m
+[0mGET /Home.js [36m304 [0m4.971 ms - -[0m
+[0mGET /src/index.js [36m304 [0m1.854 ms - -[0m
+[0mGET /App.js [36m304 [0m1.528 ms - -[0m
+[0mGET /Home.js [36m304 [0m0.344 ms - -[0m
+[0mGET /App.js [36m304 [0m0.240 ms - -[0m
+[0mGET /src/index.js [36m304 [0m0.275 ms - -[0m
+[0mGET /products [32m200 [0m49.511 ms - 2999[0m
