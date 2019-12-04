@@ -36,7 +36,7 @@ class Home extends React.Component {
             <div className="carousel-item">
               <img
                 className="d-block w-100"
-                src="https://i.vimeocdn.com/video/572944906_1280.jpg"
+                src="https://i.ytimg.com/vi/5iUunn9R9Ko/maxresdefault.jpg"
                 alt="Second slide"
               />
               <div className="carousel-caption d-none d-md-block">
