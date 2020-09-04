@@ -20,7 +20,7 @@
     "mongoose": "^5.7.10",
     "morgan": "^1.9.1",
     "mysql": "^2.17.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.19.4",
     "react-https-redirect": "^1.1.0",
     "request": "^2.88.0",
